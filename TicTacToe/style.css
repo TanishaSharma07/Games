@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex; /* ths made heading and container arrage in same row, to avid make flex-dir:columns */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe74c;
+}
+h1 {
+  font-family: cursive;
+  margin-top: 1rem;
+}
+
+.container {
+  margin: 3rem;
+  text-align: center;
+  display: grid;
+  height: 300px;
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.box {
+  display: flex;
+  /* box-shadow 0th val[optional] => if set inset  to move shadow inside | 1stvalue  is horizontal-Shadow
+  2nd= vertical|  3rd=blur|4=Color (can be currentColor)  more we can repeat these values as 5,6,7 to add shadow to previous box shadow*/
+  box-shadow: inset 10px 10px 1rem #e92734;
+  border-radius: 10%;
+  background-color: #ff5964;
+  color: #ffffff;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+#resetBtn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #002046;
+  color: #ffffff;
+}
+
+.msgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.hide {
+  display: none;
+  /* to hide the msgContainer */
+  /* why made another class to hide: so that whenever not req, it can be removed from class list */
+}
+
+#newGameBtn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #002046;
+  color: #ffffff;
+}
+
+.winmsg {
+  font-size: 4rem;
+  text-align: center;
+  color: #002046;
+}

@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 3, 40);
+  color: aliceblue;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.choices {
+  margin-top: 20px;
+  display: flex;
+  height: 10rem;
+  width: 60rem;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+
+img {
+  /* to decide img size,target img itself, reducing size of parent will not make img to shrink */
+  height: 10rem;
+  width: 10rem;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 5px; */
+  gap: 5rem;
+  font-size: 2rem;
+}
+
+.msg-box {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.msg {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgb(3, 3, 40);
+  color: aliceblue;
+  display: inline;
+  border-radius: 2rem;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all;
+}
+.moveImg {
+  font-size: 0.5rem;
+}
+
+.choice:hover {
+  background-color: purple;
+}

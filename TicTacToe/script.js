@@ -28,7 +28,7 @@ newGameBtn.addEventListener("click", () => {
   });
 });
 const showWinner = (winner) => {
-  winMsg.innerText = `Congratulations winner is ${winner}`;
+  winMsg.innerText = `Congratulations, winner is ${winner}`;
   msgContainer.classList.remove("hide");
   boxDisable(); //rather than looping upon divs to disable clicking , made a seprate function
 };
